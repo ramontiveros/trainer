@@ -96,3 +96,5 @@ db.sqlite3
 auto-save-list
 tramp
 .\#*
+/trainer/static/couch/videos
+/trainer/static/couch/videos

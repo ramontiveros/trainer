@@ -1,0 +1,15 @@
+{% extends "../layout.html" %}
+{% load static %}
+{% block content %}
+<a class="btn btn-primary" href="new" role="button">Nuevo</a>
+{% for video in videos %}
+<div class="row">
+    <div col="md-6 sd-12">
+	<video width="320" height="240" controls>
+	    <source src="{% static video.public_path %}" type="video/mp4">
+	    Your browser does not support the video tag.
+	</video>
+    </div>
+</div>
+{% endfor %}
+{% endblock %}
